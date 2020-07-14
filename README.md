@@ -5,8 +5,8 @@ O retorno da aplicação deverá será a pizza com seu respectivo preço.
 
 ### Tipos de massa: 
 
-> 1 item requerido
-> Limite de 1 item
+> * 1 item requerido
+> * Limite de 1 item
 
 * Tradicional `preco: 20`
 * Integral `preco: 25`
@@ -16,10 +16,8 @@ O retorno da aplicação deverá será a pizza com seu respectivo preço.
 
 ### Recheios:
 
-> Obrigatório 1 recheio
-> Recheios podem ser compostos
-> Recheios 
-> Adicionar desconto de 20% a cada recheio adicional
+> * Obrigatório ao menos 1 recheio, recheios podem ser compostos de recheios 
+> * Adicionar desconto de 25% a cada recheio adicional
 
 * Mussarela `preco: 8`
 * Presunto  `preco: 8`
@@ -29,9 +27,9 @@ O retorno da aplicação deverá será a pizza com seu respectivo preço.
 
 ### Ingredientes adicionais:
 
-> Não tem limite de ingredientes
-> Adicionar desconto progressivo de 5% a cada ingrediente adicional
-> Não poderá ter itens duplicados
+> * Não tem limite de ingredientes
+> * Adicionar desconto progressivo de 5% a cada ingrediente adicional
+> * Não poderá ter itens duplicados
 
 * Bacon `preco: 5`
 * Milho `preco: 2`
