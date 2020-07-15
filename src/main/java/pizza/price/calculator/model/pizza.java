@@ -7,7 +7,7 @@ import pizza.price.calculator.enums.Pasta;
 public class pizza {
 
     private Pasta pasta;
-    private Flavor[] recheios;
+    private Flavor[] flavors;
     private Extra[] extras;
     private double price;
 
