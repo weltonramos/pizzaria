@@ -3,12 +3,46 @@
  */
 package pizza.price.calculator;
 
+import pizza.price.calculator.enums.Pasta;
+
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+//        System.out.println(new App().getGreeting());
+
+        System.out.println("Bem vindo a Caedson Pizzaria!");
+        System.out.println("Por favor, escolha o tipo da massa da sua pizza:\n");
+
+        pastaMenu();
+
+        Scanner scanner = new Scanner(System.in);
+        int pasta = scanner.nextInt();
+
+        while (pasta < 1 || pasta > 5){
+            System.out.println("Opção inválida");
+            pasta = scanner.nextInt();
+        }
+
+        double price = Pasta.toEnum(pasta).getPrice();
+        System.out.println(Pasta.toEnum(pasta)+ " - Valor: R$" + price);
+
+    }
+
+    private static void pastaMenu() {
+        System.out.println("1 - Tradicional\n2 - Integral\n3 - Brócolis\n4 - Sem gluten e sem lactose\n5 - Tapioca");
+    }
+
+    private static void flavorMenu(){
+        System.out.println("1 - Muçarela\n2 - Presunto\n3 - Calabresa\n4 - Frango\n5 - Atum");
+    }
+
+    private static void extraMenu(){
+        System.out.println("1 - Bacon\n2 - Molho\n3 - Ervilha\n4 - Cebola\n5 - Alho\n6 - Tomate\n" +
+                "7 - Oregano\n8 - Sal\n9 - Molho de tomate");
     }
 }
