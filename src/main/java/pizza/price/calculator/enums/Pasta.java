@@ -2,11 +2,11 @@ package pizza.price.calculator.enums;
 
 public enum Pasta {
 
-    TRADICIONAL(1, "Tradicional", 20.0),
-    INTEGRAL(2, "Integral",25.0),
-    BROCOLIS(3, "Brócolis",28.0),
-    SEM_GLUTEN_E_SEM_LACTOSE(4, "Sem gluten e sem lactose", 30.0),
-    TAPIOCA(5, "Tapioca", 35.0);
+    TRADICIONAL(1, "Tradicional", 20.00),
+    INTEGRAL(2, "Integral",25.00),
+    BROCOLIS(3, "Brócolis",28.00),
+    SEM_GLUTEN_E_SEM_LACTOSE(4, "Sem gluten e sem lactose", 30.00),
+    TAPIOCA(5, "Tapioca", 35.00);
 
     private final Integer option;
     private final String description;
